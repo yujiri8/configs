@@ -1,0 +1,44 @@
+# Thoughts files.
+# The way you use this is by writing each thought on a line tab-indented under what it's a response or an answer to
+# with a 1-3 character symbol to precede it. The color-coding of thoughts makes it easier to tell at a glance what's
+# what, and also looks pretty.
+syntax default
+comment "#"
+
+# Problems that need to be solved or questioned that need to be answered and are expected to have a large tree
+# following them, or categories in a list.
+color brightyellow "^	*(==|!!)?::.*"
+# Questions.
+color magenta "^	*(==|!!)?\?\?.*"
+
+# Good things; possible solutions to problems, advantages of approaches, etc.
+color blue "^	*(==|!!)?\+\+.*"
+# Satisfactory and accepted answers to problems.
+color brightblue "^	*(==|!!)?\+\+\+.*"
+# Bad things; non-fatal problems with proposed solutions or questions that would have to be answered but aren't
+# expected to have an answer, etc.
+color red "^	*(==|!!)?--.*"
+# Apparently fatal downsides that must be resolved before a solution can be accepted.
+color brightred "^	*(==|!!)?---.*"
+
+# Tentative/probationary statements, or unconfirmed answers to questions.
+color yellow "^	*(==|!!)?//.*"
+# Things that are set in stone but should be kept in mind.
+color green "^	*(==|!!)?\.\..*"
+
+# Thoughts that aren't necessarily solutions or answers themselves but might lead to a lot of insight,
+# or tasks in a task file.
+color brightgreen "^	*(==|!!)?>>.*"
+# Comments: things that aren't part of the main line of thought but are interesting enough to be worth
+# noting next to them.
+color cyan "^	*(==|!!)?*#.*"
+
+# Things so important I want to distinguish them out of a large file or block.
+color black,green "^.*!!"
+# Continuations of long lines. This precedes the normal symbol for the thought type.
+color black,white "=="
+#color black,white "==(>|/|\+|-|:|\?)" # old version
+
+# Spaces in front of tabs and trailing whitespace.
+color ,red " +	+"
+color ,red "[[:space:]]+$"

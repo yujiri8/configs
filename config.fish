@@ -103,6 +103,16 @@ function alert_fork
 	end
 end
 
+# quick go - bookmarks
+set -x a ryan@bespin.experimeta.com
+set -x y root@yujiri.xyz
+set -x c ~/code/cfg
+set -x u ~/code/util
+function qga; ssh $a $argv; end
+function qgy; ssh $y $argv; end
+function qgc; g $c; end
+function qgu; g $u; end
+
 function fish_prompt
 	# We have to save the exit status, otherwise the other commands run in the prompt will overwrite it.
 	set saved_status $status

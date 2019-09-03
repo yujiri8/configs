@@ -5,6 +5,11 @@
 syntax default
 comment "#"
 
+# Comments: things that aren't part of the main line of thought but are interesting enough to be worth
+# noting next to them.
+color cyan "( |==|!!)#.*"
+color cyan "^( |	)*#.*"
+
 # Problems that need to be solved or questioned that need to be answered and are expected to have a large tree
 # following them, or categories in a list.
 color brightyellow "^	*(==|!!)?::.*"
@@ -29,10 +34,6 @@ color green "^	*(==|!!)?\.\..*"
 # Thoughts that aren't necessarily solutions or answers themselves but might lead to a lot of insight,
 # or tasks in a task file.
 color brightgreen "^	*(==|!!)?>>.*"
-# Comments: things that aren't part of the main line of thought but are interesting enough to be worth
-# noting next to them.
-color cyan "(==|!!)#.*"
-color cyan "^( |	)*#.*"
 
 # Things so important I want to distinguish them out of a large file or block.
 color black,green "^.*!!"

@@ -33,7 +33,7 @@ function d; command rm -r $argv; end # delete
 function c; command cp -R $argv; end # copy
 function n; command mv $argv; end # name
 function i; command stat -x $argv; end # info
-function f; command file $argv; end # format/file
+function t; command file $argv; end # type
 function s; command less $argv; end # scroll
 # langs
 function p; python3.6 $argv; end

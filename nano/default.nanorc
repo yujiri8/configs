@@ -31,7 +31,8 @@ color green "^	*(==|!!)?\.\..*"
 color brightgreen "^	*(==|!!)?>>.*"
 # Comments: things that aren't part of the main line of thought but are interesting enough to be worth
 # noting next to them.
-color cyan "^	*(==|!!)?*#.*"
+color cyan "(==|!!)#.*"
+color cyan "^( |	)*#.*"
 
 # Things so important I want to distinguish them out of a large file or block.
 color black,green "^.*!!"

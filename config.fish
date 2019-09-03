@@ -12,15 +12,15 @@ bind '[3;3~' kill-bigword
 #bind backspace backward-kill-bigword
 
 # man
-function h; man $argv; end
+function h; man $argv; end # 'help'
 # cd
-function g; cd $argv; l; end
-function u; g ..; end
+function g; cd $argv; l; end # 'go'
+function u; g ..; end # 'up'
 function u2; g ../..; end
 function uu; u2; end
-function b; prevd; l; end
+function b; prevd; l; end # 'back'
 function b2; prevd; prevd; l; end
-function f; nextd; l; end
+function f; nextd; l; end # 'forward'
 function f2; nextd; nextd; l; end
 # ls
 function l; command ls -GI $argv; end

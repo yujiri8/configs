@@ -42,10 +42,12 @@ function se; grep $argv; end # search
 function p; python3.6 $argv; end
 function p2; python2.7 $argv; end
 function py; pypy3 $argv; end
+function pd; pydoc3.6 $argv; end
 function gob; go build $argv; end
 function gor; go run $argv; end
 function gof; goimports -w $argv; end
 function gol; golangci-lint $argv; end
+function god; go doc $argv; end
 function hi; ghci $argv; end
 # git
 function gits; git status $argv; end

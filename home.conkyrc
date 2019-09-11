@@ -8,5 +8,5 @@ conky.config = {
 }
 
 conky.text = [[
-	cpu ${cpu 0}% ${freq 0}MHz ${acpitemp}C | mem ${memperc}% | rd ${diskio_read} wr ${diskio_write} | ${addr lagg0} | D:${downspeed lagg0}/s U:${upspeed lagg0}/s | vol ${mixer}% | ${battery} ${battery_time} | ${time %a %b %d %I:%M:%S %p}
+	cpu ${cpu 0}% ${freq 0}MHz ${acpitemp}C | mem ${memperc}% | rd ${diskio_read} wr ${diskio_write} | ${addr lagg0} | D:${downspeed lagg0}/s U:${upspeed lagg0}/s | vol ${mixer}% | ${battery} ${battery_time} | ${time %a %b %d %H:%M:%S}
 ]]

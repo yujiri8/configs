@@ -37,7 +37,8 @@ function t; file $argv; end # type
 function s; less $argv; end # scroll
 function k; kill $argv; end
 function kn; killall $argv; end # kill name
-function se; grep $argv; end # search
+function se; egrep $argv; end # search
+function sed; sed -E $argv; end
 # langs
 function p; python3.6 $argv; end
 function p2; python2.7 $argv; end

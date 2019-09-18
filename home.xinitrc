@@ -6,4 +6,3 @@ xset r rate 200 30
 # Disable bells (beep still works)
 xset b off
 exec dwm
-#exec xmonad

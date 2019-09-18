@@ -58,6 +58,7 @@ function gita; git add $argv; end
 function gitl; git log $argv; end
 function gitc; git commit $argv; end
 function gitca; git commit --amend $argv; end
+function ccount; git log --oneline | wc -l; end # commit count
 # music
 function mp; mplayer $argv; end
 function ffmpeg; command ffmpeg $argv -hide_banner; end
@@ -67,8 +68,6 @@ function alarm; echo "~/code/utils/alarm.sh" | at $argv; end
 function al; $argv; if test $status -ne 0; beep; end; end
 # 'remind' - run a command and beep when it finishes regardless of exit status
 function re; $argv; beep; end
-# commit count
-function ccount; git log | grep "Author: " | wc -l; end
 
 function fish_prompt
 	# We have to save the exit status, otherwise the other commands run in the prompt will overwrite it.

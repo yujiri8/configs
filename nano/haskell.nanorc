@@ -20,13 +20,15 @@ color cyan "(->|<-)"
 color magenta "\.|\$"
 
 ## Data constructors
-color magenta "(True|False|Nothing|Just|Left|Right|LT|EQ|GT)"
+color magenta "\<(True|False|Nothing|Just|Left|Right|LT|EQ|GT)\>"
 
 ## Data classes
-color magenta "[ ](Read|Show|Enum|Eq|Ord|Data|Bounded|Typeable|Num|Real|Fractional|Integral|RealFrac|Floating|RealFloat|Monad|MonadPlus|Functor|Applicative|Monoid|Semigroup)"
+color magenta "\<(Read|Show|Enum|Eq|Ord|Data|Bounded|Typeable|Num|Real|Fractional|Integral|RealFrac|Floating|RealFloat|Monad|MonadPlus|Functor|Applicative|Monoid|Semigroup)\>"
 
 ## Strings
-color yellow ""[^\"]*""
+color yellow ""([^\"]|\\.)*""
+## Chars
+color brightyellow "'([^\']|\\.)?'"
 
 ## Comments
 color green "--.*"

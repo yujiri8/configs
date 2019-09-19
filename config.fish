@@ -22,6 +22,7 @@ function b; prevd; l; end # back
 function b2; prevd; prevd; l; end
 function f; nextd; l; end # forward
 function f2; nextd; nextd; l; end
+function gn; mkdir -p $argv; g $argv; end # go new
 # ls
 function l; command ls -GI $argv; end
 function ls; command ls -GA $argv; end # list secret
@@ -39,6 +40,7 @@ function k; kill $argv; end
 function kn; killall $argv; end # kill name
 function se; egrep --color $argv; end # search
 function sed; command sed -E $argv; end
+function loc; locate $argv; end
 # langs
 function p; python3.6 $argv; end
 function p2; python2.7 $argv; end

@@ -22,6 +22,8 @@ function b; prevd; l; end # back
 function b2; prevd; prevd; l; end
 function f; nextd; l; end # forward
 function f2; nextd; nextd; l; end
+# mkdir
+function mk; mkdir $argv; end
 function gn; mkdir -p $argv; g $argv; end # go new
 # ls
 function l; command ls -GI $argv; end
@@ -38,7 +40,8 @@ function t; file $argv; end # type
 function s; less $argv; end # scroll
 function k; kill $argv; end
 function kn; killall $argv; end # kill name
-function se; egrep --color $argv; end # search
+function sf; find $argv; end # search file
+function st; egrep --color $argv; end # search text
 function sed; command sed -E $argv; end
 function loc; locate $argv; end
 # langs
@@ -52,6 +55,7 @@ function gof; goimports -w $argv; end
 function gol; golangci-lint $argv; end
 function god; go doc $argv; end
 function hi; ghci $argv; end
+function hs; runghc $argv; end
 # git
 function gits; git status $argv; end
 function gitd; git diff $argv; end

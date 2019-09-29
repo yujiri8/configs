@@ -1,16 +1,13 @@
 set nohelp
 set constantshow
 set quickblank
-set linenumbers
+#set linenumbers
 set casesensitive
 set autoindent
 set smarthome
-set morespace
-set smooth
 set multibuffer
 set nowrap
 set suspend
-unset nonewlines
 #set wordbounds
 #set tabsize 4
 include "/usr/local/share/nano/*.nanorc"

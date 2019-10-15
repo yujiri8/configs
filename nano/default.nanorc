@@ -15,13 +15,15 @@ color cyan "^( |	)*#.*"
 color brightyellow "^	*(==|!!)?::.*"
 # Questions.
 color magenta "^	*(==|!!)?\?\?.*"
+# Items in a list.
+color brightcyan "^	*(==|!!)?\*.*"
 
 # Good things; possible solutions to problems, advantages of approaches, etc.
 color blue "^	*(==|!!)?\+\+.*"
 # Satisfactory and accepted answers to problems.
 color brightblue "^	*(==|!!)?\+\+\+.*"
-# Bad things; non-fatal problems with proposed solutions or questions that would have to be answered but aren't
-# expected to have an answer, etc.
+# Bad things; non-fatal problems with proposed solutions or questions that would have to be answered but may not
+# have a satisfactory answer, etc.
 color red "^	*(==|!!)?--.*"
 # Apparently fatal downsides that must be resolved before a solution can be accepted.
 color brightred "^	*(==|!!)?---.*"

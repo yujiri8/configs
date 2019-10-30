@@ -61,6 +61,7 @@ function gits; git status $argv; end
 function gitd; git diff $argv; end
 function gitdc; git diff --cached $argv; end
 function gita; git add $argv; end
+function gitau; git add -u $argv; end
 function gitl; git log $argv; end
 function gitc; git commit $argv; end
 function gitca; git commit --amend $argv; end

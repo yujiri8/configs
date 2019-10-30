@@ -13,14 +13,15 @@ color cyan "^( |	)*#.*"
 # Problems that need to be solved or questioned that need to be answered and are expected to have a large tree
 # following them, or categories in a list.
 color brightyellow "^	*(==|!!)?::.*"
-# Questions.
+# Questions where there aren't necessarily any wrong answers, or it's easy to come up with an answer and I just need
+# to decide which one is the best.
 color magenta "^	*(==|!!)?\?\?.*"
 # Items in a list.
 color brightcyan "^	*(==|!!)?\*.*"
 
 # Good things; possible solutions to problems, advantages of approaches, etc.
 color blue "^	*(==|!!)?\+\+.*"
-# Satisfactory and accepted answers to problems.
+# Satisfactory and accepted answers to problems, or very significant advantages.
 color brightblue "^	*(==|!!)?\+\+\+.*"
 # Bad things; non-fatal problems with proposed solutions or questions that would have to be answered but may not
 # have a satisfactory answer, etc.
@@ -28,13 +29,12 @@ color red "^	*(==|!!)?--.*"
 # Apparently fatal downsides that must be resolved before a solution can be accepted.
 color brightred "^	*(==|!!)?---.*"
 
-# Tentative/probationary statements, or unconfirmed answers to questions.
+# Tentative/probationary statements, or possible answers to purple questions.
 color yellow "^	*(==|!!)?//.*"
 # Things that are set in stone but should be kept in mind.
 color green "^	*(==|!!)?\.\..*"
 
-# Thoughts that aren't necessarily solutions or answers themselves but might lead to a lot of insight,
-# or tasks in a task file.
+# Thoughts that aren't necessarily solutions or answers themselves but might lead to a lot of insight.
 color brightgreen "^	*(==|!!)?>>.*"
 
 # Things so important I want to distinguish them out of a large file or block.

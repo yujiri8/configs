@@ -67,7 +67,7 @@ function gitc; git commit $argv; end
 function gitca; git commit --amend $argv; end
 function ccount; git log --oneline | wc -l; end # commit count
 # music
-function mp; mplayer $argv; end
+function mp; mpv $argv; end
 function ffmpeg; command ffmpeg $argv -hide_banner; end
 # alarm shortcut
 function alarm; echo "~/code/util/alarm.sh" | at $argv; end

@@ -10,7 +10,7 @@ set nowrap
 set suspend
 #set wordbounds
 #set tabsize 4
-set guidestripe 120
+set guidestripe 121
 include "/usr/local/share/nano/*.nanorc"
 include "~/.config/nano/*.nanorc"
 bind M-` comment main

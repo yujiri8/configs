@@ -18,10 +18,10 @@ function g; cd $argv; l; end # go
 function u; g ..; end # up
 function u2; g ../..; end
 function uu; u2; end
-function b; prevd; l; end # back
-function b2; prevd; prevd; l; end
-function f; nextd; l; end # forward
-function f2; nextd; nextd; l; end
+function b; prevd $argv; l; end # back
+function f; nextd $argv; l; end # forward
+function b2; b 2; end
+function f2; f 2; end
 # mkdir
 function mk; mkdir $argv; end
 function gn; mkdir -p $argv; g $argv; end # go new

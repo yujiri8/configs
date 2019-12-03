@@ -41,7 +41,7 @@ function s; less $argv; end # scroll
 function k; kill $argv; end
 function kn; killall $argv; end # kill name
 function sf; find $argv; end # search file
-function st; egrep --color $argv; end # search text
+function st; grep -E --color --directories=skip $argv; end # search text
 function sed; command sed -E $argv; end
 function loc; locate $argv; end
 # langs

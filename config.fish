@@ -79,7 +79,7 @@ function re; $argv; alert_fork; end
 # helper to make a sound, that uses beep if the session is local and tries ASCII BEL if it's not.
 function alert_fork
 	if test -n "$SSH_CONNECTION"
-		echo \a 1>&2
+		echo -n \a 1>&2
 	else
 		beep
 	end

@@ -72,9 +72,18 @@ function ffmpeg; command ffmpeg $argv -hide_banner; end
 # alarm shortcut
 function alarm; echo "~/code/util/alarm.sh" | at $argv; end
 # 'alert' - run a command and beep if it fails
-function al; $argv; if test $status -ne 0; beep; end; end
+function al; $argv; if test $status -ne 0; alert_fork; end; end
 # 'remind' - run a command and beep when it finishes regardless of exit status
-function re; $argv; beep; end
+function re; $argv; alert_fork; end
+
+# helper to make a sound, that uses beep if the session is local and tries ASCII BEL if it's not.
+function alert_fork
+	if test -n "$SSH_CONNECTION"
+		echo \a 1>&2
+	else
+		beep
+	end
+end
 
 function fish_prompt
 	# We have to save the exit status, otherwise the other commands run in the prompt will overwrite it.

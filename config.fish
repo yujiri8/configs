@@ -45,10 +45,10 @@ function st; grep -E --color --directories=skip $argv; end # search text
 function sed; command sed -E $argv; end
 function loc; locate $argv; end
 # langs
-function p; python3.6 $argv; end
+function p; python3.7 $argv; end
 function p2; python2.7 $argv; end
 function py; pypy3 $argv; end
-function pd; pydoc3.6 $argv; end
+function pd; pydoc3.7 $argv; end
 function gob; go build $argv; end
 function gor; go run $argv; end
 function gof; goimports -w $argv; end

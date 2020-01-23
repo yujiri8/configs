@@ -58,14 +58,20 @@ function god; go doc $argv; end
 function hi; ghci $argv; end
 function hs; runghc $argv; end
 # git
-function gits; git status $argv; end
-function gitd; git diff $argv; end
-function gitdc; git diff --cached $argv; end
-function gita; git add $argv; end
-function gitau; git add -u $argv; end
-function gitl; git log $argv; end
-function gitc; git commit $argv; end
-function gitca; git commit --amend $argv; end
+function gts; git status $argv; end
+function gtd; git diff $argv; end
+function gtdc; git diff --cached $argv; end
+function gta; git add $argv; end
+function gtu; git add -u $argv; end
+function gtl; git log $argv; end
+function gtc; git commit $argv; end
+function gtca; git commit --amend $argv; end
+function gtpl; git pull $argv; end
+function gtsw; git switch $argv; end
+function gtch; git checkout $argv; end
+function gtr; git rebase $argv; end
+function gtsh; git show $argv; end
+function gtbr; git branch $argv; end
 function ccount; git log --oneline | wc -l; end # commit count
 # music
 function mp; mpv $argv; end

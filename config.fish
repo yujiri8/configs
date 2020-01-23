@@ -72,6 +72,7 @@ function gtch; git checkout $argv; end
 function gtr; git rebase $argv; end
 function gtsh; git show $argv; end
 function gtbr; git branch $argv; end
+function gtst; git stash $argv; end
 function ccount; git log --oneline | wc -l; end # commit count
 # music
 function mp; mpv $argv; end

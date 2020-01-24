@@ -44,7 +44,7 @@ function sf; find $argv; end # search file
 function st; grep -E --color --directories=skip $argv; end # search text
 function sed; command sed -E $argv; end
 function loc; locate $argv; end
-function scp; scp -r; end
+function scp; command scp -r $argv; end
 # langs
 function p; python3.7 $argv; end
 function p2; python2.7 $argv; end

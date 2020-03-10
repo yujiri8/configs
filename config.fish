@@ -75,6 +75,8 @@ function gtbr; git branch $argv; end
 function gtst; git stash $argv; end
 function gtrs; git restore $argv; end
 function ccount; git log --oneline | wc -l; end # commit count
+# psql
+function pq; psql -d $argv[1] -U $argv; end
 # music
 function mp; mpv $argv; end
 function ffmpeg; command ffmpeg $argv -hide_banner; end

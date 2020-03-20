@@ -1,0 +1,26 @@
+syntax "markdown" "\.md$"
+
+comment "<!--" "-->"
+
+# Lists.
+color brightyellow "^[ 	]*\* "
+color brightyellow "^[ 	]*([1-9]+)\. "
+
+# Links.
+color green "\[[^]]+\]"
+color magenta "\([^\)]+\)"
+
+# Bold and italics.
+color brightwhite "\*[^*]+\*"
+color brightwhite "\*\*[^*]+\*\*"
+# Code.
+color blue "`[^`]+`"
+
+# Headers.
+color brightyellow "^#.*"
+
+# HTML.
+color cyan "<.*>"
+
+# Code blocks.
+color blue start="```" end="```"

@@ -1,5 +1,4 @@
-# I copied this one from somewhere on the internet when I was starting out with Haskell and made a few changes.
-# It's not great, but it's much better than nothing.
+# Modified from https://github.com/scopatz/nanorc/blob/master/haskell.nanorc.
 
 syntax "haskell" "\.hs$"
 comment "--"
@@ -19,8 +18,6 @@ color magenta "\.|\$"
 
 ## Data constructors
 color magenta "\<(True|False|Nothing|Just|Left|Right|LT|EQ|GT)\>"
-## Data classes
-color magenta "\<(Read|Show|Enum|Eq|Ord|Data|Bounded|Typeable|Num|Real|Fractional|Integral|RealFrac|Floating|RealFloat|Monad|MonadPlus|Functor|Applicative|Monoid|Semigroup)\>"
 
 ## Strings
 color yellow ""([^\"]|\\.)*""
@@ -32,3 +29,5 @@ color green "--.*"
 color green start="\{-" end="-\}"
 
 color brightred "undefined"
+
+tabgives "  "

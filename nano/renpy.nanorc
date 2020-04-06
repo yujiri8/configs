@@ -1,15 +1,12 @@
-# I made this by modifying the Python one with my limited knowledge of Renpy. The scheme isn't great, but it satisfies
-# my needs, and I don't intend to keep working with Renpy after my current WIP is done anyway.
-
 syntax renpy "\.rpy$"
 header "^#!.*renpy"
 magic "Renpy script"
 comment "#"
 
 # Renpy specific keywords.
-color brightyellow "\<(init|python|define|default|label|call|jump|pause|show|hide|scene|at|with|zorder|play|stop|fadeout|fadein|queue|image|screen|menu|transform)\>"
+color brightyellow "\<(python|init|early|define|default|label|call|jump|image|screen|menu|transform|show|hide|scene|at|with|zorder|pause|play|stop|fadeout|fadein|queue)\>"
 # Renpy words that are keywords in animation contexts.
-color green "\<(repeat|block|choice|time|xoffset|yoffset|zoom|parallel|linear|alpha|ytile|xtile|xpos|ypos|xcenter|ycenter|center|anchor|xanchor|yanchor|subpixel|easein)\>"
+color green "\<(repeat|block|choice|parallel|(x|y|)(pos|offset|anchor|align|center|tile)|zoom|time|linear|easein|alpha|subpixel)\>"
 
 # Function definitions.
 icolor brightblue "def [0-9A-Z_]+"
@@ -18,11 +15,6 @@ color brightcyan "\<(and|as|assert|async|await|break|class|continue)\>"
 color brightcyan "\<(def|del|elif|else|except|finally|for|from)\>"
 color brightcyan "\<(global|if|import|in|is|lambda|nonlocal|not|or)\>"
 color brightcyan "\<(pass|raise|return|try|while|with|yield)\>"
-
-# These two are keywords in Python 2, but functions in Python 3,
-# so only color them when they are followed by whitespace, assuming
-# that print(x) is a function invocation and print (x) is a statement.
-#color brightcyan "\<(exec|print)([[:blank:]]|$)"
 
 # Special values.
 color brightmagenta "\<(False|None|True)\>"
@@ -44,3 +36,5 @@ color brightwhite,yellow "(FIXME|TODO|XXX)"
 
 # Trailing whitespace.
 color ,green "[[:space:]]+$"
+
+tabgives "    "

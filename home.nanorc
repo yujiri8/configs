@@ -8,11 +8,15 @@ set smarthome
 set multibuffer
 set nowrap
 set suspend
+set mouse
 #set wordbounds
 #set tabsize 4
 set guidestripe 121
+bind M-` comment main
+# Note: Del means the escape sequence, and ^? can't be bound for some reason.
+
 include "/usr/local/share/nano/*.nanorc"
 include "~/.config/nano/*.nanorc"
-bind M-` comment main
+include "~/.config/nano/scopatz/csv.nanorc" # github.com/scopatz/nanorc
 
-# Note: Del means the escape sequence, and ^? can't be bound for some reason.
+extendsyntax javascript tabgives "    "

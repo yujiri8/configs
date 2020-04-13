@@ -1,22 +1,23 @@
 set nohelp
 set constantshow
 set quickblank
-#set linenumbers
 set casesensitive
 set autoindent
 set smarthome
 set multibuffer
-set nowrap
+set softwrap
 set suspend
 set mouse
-#set wordbounds
-#set tabsize 4
+#set linenumbers
 set guidestripe 121
 bind M-` comment main
 # Note: Del means the escape sequence, and ^? can't be bound for some reason.
 
 include "/usr/local/share/nano/*.nanorc"
 include "~/.config/nano/*.nanorc"
-include "~/.config/nano/scopatz/csv.nanorc" # github.com/scopatz/nanorc
+include "~/.config/nano/scopatz/haskell.nanorc"
+include "~/.config/nano/scopatz/nginx.nanorc"
+include "~/.config/nano/scopatz/fish.nanorc"
+include "~/.config/nano/scopatz/csv.nanorc"
 
 extendsyntax javascript tabgives "    "

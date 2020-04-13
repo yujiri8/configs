@@ -1,5 +1,5 @@
 #!/bin/sh
-alias cmd="rsync -cr --delete"
+alias cmd="rsync -crl --delete"
 mkdir -p ~/.config/fish
 cmd config.fish ~/.config/fish/
 cmd home.nanorc ~/.nanorc

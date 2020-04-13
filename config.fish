@@ -42,7 +42,7 @@ function k; kill $argv; end
 function kn; killall $argv; end # kill name
 function sf; find $argv; end # search file
 function st; grep -E --color --directories=skip $argv; end # search text
-function sed; command sed -E $argv; end
+function se; command sed -E $argv; end
 function loc; locate $argv; end
 function scp; command scp -r $argv; end
 # langs

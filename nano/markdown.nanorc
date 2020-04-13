@@ -1,26 +1,35 @@
-syntax "markdown" "\.md$"
+## Syntax highlighting for Markdown files.
+
+syntax markdown "\.md$"
 
 comment "<!--|-->"
 
-# Lists.
-color brightyellow "^[ 	]*\* "
-color brightyellow "^[ 	]*([1-9]+)\. "
+# Quoted:
+color magenta "^[ 	]*>.*"
 
-# Links.
-color blue "\[[^]]+\]"
-color magenta "\([^\)]+\)"
+# List items:
+color brightmagenta "^(    |	)* ? ? ?(\*|\+|-|[1-9]+\.)( +|	)"
 
-# Bold and italics.
-color brightwhite "\*[^*]+\*"
-color brightwhite "\*\*[^*]+\*\*"
-# Code.
-color green "`[^`]+`"
+# Emphasis and strong:
+color green "\*[^*]+\*|_[^_]+_"
+color brightgreen "\*\*[^*]+\*\*|__[^_]+__"
 
-# Headers.
+# Strikethrough:
+color red "~~.+~~"
+
+# URLs and links:
+color brightblue "\[[^]]+\]\([^)]+\)"
+color brightmagenta "!?\[[^]]+\]"
+
+# Code, indented code, and fenced code:
+color brightcyan "`[^`]+`"
+color brightcyan start="^((    )+|	+)([^*+0-9> 	-]|[*+-]\S|[0-9][^.]).*" end="^$"
+color brightcyan start="```" end="```"
+
+# Headings and the underlining of headings:
 color brightyellow "^#.*"
+color brightyellow "^(=+|-+)$"
 
-# HTML.
-color cyan "<.*>"
-
-# Code blocks.
-color blue start="```" end="```"
+# HTML tags and comments:
+color cyan "<[^>]+>"
+color cyan start="<!--" end="-->"

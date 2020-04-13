@@ -19,5 +19,6 @@ include "~/.config/nano/scopatz/haskell.nanorc"
 include "~/.config/nano/scopatz/nginx.nanorc"
 include "~/.config/nano/scopatz/fish.nanorc"
 include "~/.config/nano/scopatz/csv.nanorc"
+include "~/.config/nano/scopatz/conky.nanorc"
 
 extendsyntax javascript tabgives "    "

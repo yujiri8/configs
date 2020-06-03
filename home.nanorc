@@ -22,3 +22,4 @@ include "~/.config/nano/scopatz/csv.nanorc"
 include "~/.config/nano/scopatz/conky.nanorc"
 
 extendsyntax javascript tabgives "    "
+extendsyntax go formatter "goimports -w"

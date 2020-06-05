@@ -1,3 +1,5 @@
 {
-    "Ctrl-Space": "DeleteWordRight"
+    "Ctrl-Space": "DeleteWordRight",
+    "Ctrl-R": "command-edit:replace ",
+    "Alt-r": "ToggleRuler"
 }

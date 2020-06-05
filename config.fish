@@ -1,4 +1,4 @@
-set -x EDITOR nano
+set -x EDITOR micro
 set -x PAGER less
 set -x GOPATH ~/code/go
 set -x PATH $PATH $GOPATH/bin

@@ -1,0 +1,14 @@
+color-link comment "#BBBBBB"
+color-link statement "yellow"
+color-link type "cyan"
+color-link identifier "bold blue"
+color-link special "bold yellow"
+
+color-link symbol "orange"
+color-link constant "green"
+color-link constant.specialChar "magenta"
+
+color-link error ",red"
+color-link todo "black,yellow"
+color-link current-line-number ",blue"
+color-link preproc "brightred"

@@ -5,6 +5,7 @@ set -x PATH $PATH $GOPATH/bin
 set -x DWM_CONF ~/.config/dwmconf.h
 set -x LESSHISTFILE -
 set -x fish_greeting
+set -x BROWSER firefox
 
 # delete by word with either ctrl or alt delete (alt backspace is builtin).
 bind '[3;5~' kill-bigword

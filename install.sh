@@ -3,7 +3,7 @@ alias cmd="rsync -crl --delete"
 mkdir -p ~/.config/fish
 cmd config.fish ~/.config/fish/
 cmd home.nanorc ~/.nanorc
-cmd nano ~/.config/
+cmd micro ~/.config/
 cmd dwmconf.h ~/.config/
 cmd home.conkyrc ~/.conkyrc
 cmd home.xinitrc ~/.xinitrc

@@ -1,0 +1,22 @@
+filetype: thoughts 
+
+detect: 
+    filename: "\\.tk$"
+
+rules:
+    - cyan: "( |==|!!)#.*"
+    - cyan: "^( |	)*#.*"
+    - boldyellow: "^	*(==|!!)?::.*"
+    - magenta: "^	*(==|!!)?\\?\\?.*"
+    - brightwhite: "^	*(==|!!)?\\*.*"
+    - blue: "^	*(==|!!)?\\+\\+.*"
+    - bold blue: "^	*(==|!!)?\\+\\+\\+.*"
+    - red: "^	*(==|!!)?--.*"
+    - bold red: "^	*(==|!!)?---.*"
+    - yellow: "^	*(==|!!)?//.*"
+    - green: "^	*(==|!!)?\\.\\..*"
+    - brightgreen: "^	*(==|!!)?>>.*"
+    - "black,green": "^.*!!"
+    - "black,white": "=="
+    - ",red": " +	+"
+    - ",red": "[[:space:]]+$"

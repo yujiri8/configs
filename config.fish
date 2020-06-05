@@ -29,7 +29,7 @@ function gn; mkdir -p $argv; g $argv; end # go new
 function l; command ls -GI $argv; end
 function ls; command ls -GA $argv; end # list secret
 # editor
-function e; nano $argv; end
+function e; micro $argv; end
 # other basics
 function r; cat $argv; end # read
 function d; rm -r $argv; end # delete

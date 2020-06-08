@@ -1,4 +1,4 @@
-color-link comment "#BBBBBB"
+color-link comment "#bbbbbb"
 color-link statement "yellow"
 color-link type "cyan"
 color-link identifier "bold blue"
@@ -10,5 +10,7 @@ color-link constant.specialChar "magenta"
 
 color-link error ",red"
 color-link todo "black,yellow"
-color-link current-line-number ",blue"
 color-link preproc "brightred"
+
+color-link current-line-number ",blue"
+color-link color-column "#7f7f7f"

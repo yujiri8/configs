@@ -33,17 +33,11 @@
 "lmms --allowroot"
  Mod4 + M
 
-"qutebrowser"
- Mod4 + Q
-
 "firefox"
  Mod4 + F
 
 "chrome --no-sandbox"
  Mod4 + C
-
-"falkon"
- Mod4 + A
 
 "gimp"
  Mod4 + G

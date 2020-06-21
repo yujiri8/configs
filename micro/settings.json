@@ -16,7 +16,7 @@
     "divreverse": true,
     "encoding": "utf-8",
     "eofnewline": true,
-    "fastdirty": true,
+    "fastdirty": false,
     "fileformat": "unix",
     "filetype": "unknown",
     "ftoptions": false,
@@ -57,7 +57,7 @@
     "splitright": true,
     "status": true,
     "statusformatl": "$(filename) $(modified)($(line),$(col)) $(status.paste)| ft:$(opt:filetype) | $(opt:fileformat) | $(opt:encoding)",
-    "statusformatr": "$(bind:ToggleKeyMenu): bindings, $(bind:ToggleHelp): help",
+    "statusformatr": "",
     "statusline": true,
     "sucmd": "sudo",
     "syntax": true,
@@ -66,5 +66,13 @@
     "tabstospaces": false,
     "termtitle": true,
     "useprimary": true,
-    "xterm": false
+    "xterm": false,
+    "ft:renpy": {
+        "tabstospaces": true,
+        "tabsize": 4
+    },
+    "ft:haskell": {
+        "tabstospaces": true,
+        "tabsize": 4
+    }
 }

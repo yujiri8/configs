@@ -32,7 +32,6 @@
     "linter": true,
     "literate": true,
     "matchbrace": true,
-    "matchbraceleft": false,
     "mkparents": false,
     "mouse": true,
     "parsecursor": false,
@@ -56,23 +55,21 @@
     "splitbottom": true,
     "splitright": true,
     "status": true,
-    "statusformatl": "$(filename) $(modified)($(line),$(col)) $(status.paste)| ft:$(opt:filetype) | $(opt:fileformat) | $(opt:encoding)",
+    "statusformatl": "$(modified)$(filename) $(line)/$(status.lines),$(status.vcol) $(status.size) $(status.paste)| $(opt:filetype) | $(opt:fileformat) | $(opt:encoding)",
     "statusformatr": "",
     "statusline": true,
     "sucmd": "sudo",
     "syntax": true,
     "tabmovement": false,
-    "tabsize": 8,
+    "tabsize": 4,
     "tabstospaces": false,
     "termtitle": true,
     "useprimary": true,
     "xterm": false,
     "ft:renpy": {
         "tabstospaces": true,
-        "tabsize": 4
     },
     "ft:haskell": {
         "tabstospaces": true,
-        "tabsize": 4
     }
 }

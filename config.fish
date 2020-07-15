@@ -102,7 +102,7 @@ function fish_prompt
 	# We have to save the exit status, otherwise the other commands run in the prompt will overwrite it.
 	set saved_status $status
 	set_color yellow
-	echo -n (hostname) (whoami) (prompt_pwd) (date +'%M:%S') $saved_status'>'
+	echo -n (hostname) (whoami) (prompt_pwd) (date +'%H:%M:%S') $saved_status'>'
 	set_color normal
 end
 

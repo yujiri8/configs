@@ -58,6 +58,7 @@ function gol; golangci-lint $argv; end
 function god; go doc $argv; end
 function hi; ghci $argv; end
 function hs; runghc -Wall $argv; end
+function oc; rlwrap ocaml $argv; end
 # git
 function gts; git status $argv; end
 function gtd; git diff $argv; end

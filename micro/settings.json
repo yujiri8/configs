@@ -5,7 +5,6 @@
     "autosu": false,
     "backup": true,
     "basename": false,
-    "bounce": true,
     "colorcolumn": 120,
     "colorscheme": "yujiri",
     "comment": true,

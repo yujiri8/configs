@@ -66,9 +66,9 @@
     "useprimary": true,
     "xterm": false,
     "ft:renpy": {
-        "tabstospaces": true,
+        "tabstospaces": true
     },
     "ft:haskell": {
-        "tabstospaces": true,
+        "tabstospaces": true
     }
 }

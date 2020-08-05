@@ -1,11 +1,19 @@
 #!/bin/sh
 alias cmd="rsync -crl --delete"
+
 mkdir -p ~/.config/fish
 cmd config.fish ~/.config/fish/
-cmd dwmconf.h ~/.config/
-cmd home.conkyrc ~/.conkyrc
-cmd home.xinitrc ~/.xinitrc
-cmd home.xbindkeysrc ~/.xbindkeysrc
+
+mkdir -p ~/.config/sway
+cmd sway ~/.config/sway/config
+
 cmd mpv ~/.config/
+
+mkdir -p ~/.config/conky
+cmd conky.conf ~/.config/conky/
+
+mkdir -p ~/.config/alacritty
+cmd alacritty.yml ~/.config/alacritty/
+
 cmd micro ~/.config/
 micro -plugin install go wc bounce quoter

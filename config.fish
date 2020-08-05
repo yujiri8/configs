@@ -27,8 +27,8 @@ function f2; f 2; end
 function mk; mkdir $argv; end
 function gn; mkdir -p $argv; g $argv; end # go new
 # ls
-function l; command ls -GI $argv; end
-function ls; command ls -GA $argv; end # list secret
+function l; command ls --color $argv; end
+function ls; command ls --color -A $argv; end # list secret
 # editor
 function e; micro $argv; end
 # other basics
@@ -36,21 +36,20 @@ function r; cat $argv; end # read
 function d; rm -r $argv; end # delete
 function c; cp -R $argv; end # copy
 function n; mv $argv; end # name
-function i; stat -x $argv; end # info
+function i; stat $argv; end # info
 function t; file $argv; end # type
 function s; less $argv; end # scroll
 function k; kill $argv; end
 function kn; killall $argv; end # kill name
 function sf; find $argv; end # search file
-function st; grep -E --color --directories=skip $argv; end # search text
+function st; grep -P --color --directories=skip $argv; end # search text
 function se; command sed -E $argv; end
 function loc; locate $argv; end
 function scp; command scp -r $argv; end
 # langs
-function p; python3.7 $argv; end
-function p2; python2.7 $argv; end
-function py; pypy3 $argv; end
-function pd; pydoc3.7 $argv; end
+function p; python $argv; end
+function py; pypy $argv; end
+function pd; pydoc $argv; end
 function gob; go build $argv; end
 function gor; go run $argv; end
 function gof; goimports -w $argv; end

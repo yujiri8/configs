@@ -1,5 +1,8 @@
 {
     "Ctrl-Space": "DeleteWordRight",
     "Ctrl-R": "command-edit:replace ",
-    "Alt-r": "ToggleRuler"
+    "Alt-r": "ToggleRuler",
+    "Alt-[": "lua:bounce.bounce",
+    "Alt-;": "lua:bounce.keepLoc",
+    "Alt-'": "lua:bounce.gotoStoredLoc",
 }

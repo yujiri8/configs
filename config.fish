@@ -105,13 +105,3 @@ function fish_prompt
 	echo -n (hostname) (whoami) (prompt_pwd) (date +'%H:%M:%S') $saved_status'>'
 	set_color normal
 end
-
-function ms
-	xdotool mousemove $argv
-end
-function mr
-	xdotool mousemove_relative $argv
-end
-function cl
-	xdotool click 1
-end

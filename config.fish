@@ -1,7 +1,7 @@
 set -x EDITOR micro
 set -x PAGER less
 set -x GOPATH ~/code/go
-set -x PATH $PATH $GOPATH/bin ~/.cabal/bin ~/.cargo/bin
+set -x fish_user_paths $GOPATH/bin ~/.cabal/bin ~/.cargo/bin
 set -x DWM_CONF ~/.config/dwmconf.h
 set -x LESSHISTFILE -
 set -x fish_greeting

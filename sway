@@ -30,12 +30,13 @@ bindsym $mod+s exec /root/code/util/scrot.sh
 bindsym XF86AudioMute exec amixer set Master toggle
 bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+bindsym F9 exec brightnessctl set 5%-
+bindsym F10 exec brightnessctl set +5%
 
 bindsym $mod+Shift+q kill
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaymsg exit
-
 
 # focus/move
 bindsym $mod+Left focus left

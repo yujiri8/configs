@@ -26,7 +26,7 @@ bindsym $mod+Backslash exec fractal
 bindsym $mod+M exec lmms --allowroot # music
 bindsym $mod+I exec gimp # image
 bindsym $mod+d exec $menu
-bindsym $mod+s exec /root/code/util/scrot.sh
+bindsym $mod+s exec ~/code/util/scrot.sh
 bindsym XF86AudioMute exec amixer set Master toggle
 bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+

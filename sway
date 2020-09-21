@@ -27,7 +27,7 @@ bindsym $mod+M exec lmms --allowroot # music
 bindsym $mod+I exec gimp # image
 bindsym $mod+d exec $menu
 bindsym $mod+s exec ~/code/util/scrot.sh
-bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
 bindsym F9 exec brightnessctl set 5%-

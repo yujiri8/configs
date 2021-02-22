@@ -23,7 +23,7 @@ bindsym $mod+Shift+Tab exec chromium --no-sandbox
 bindsym $mod+Backslash exec fractal
 bindsym $mod+M exec lmms --allowroot # music
 bindsym $mod+I exec gimp # image
-bindsym $mod+d exec $menu
+bindsym $mod+d exec makoctl dismiss
 bindsym $mod+s exec ~/code/util/scrot.sh
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec amixer set Master 5%-
@@ -90,18 +90,6 @@ bindsym $mod+Shift+0 move container to workspace number 10
 
 	# Move focus to the parent container
 	bindsym $mod+a focus parent
-#
-# Scratchpad:
-#
-	# Sway has a "scratchpad", which is a bag of holding for windows.
-	# You can send windows there and get them back later.
-
-	# Move the currently focused window to the scratchpad
-	bindsym $mod+Shift+minus move scratchpad
-
-	# Show the next scratchpad window or hide the focused scratchpad window.
-	# If there are multiple scratchpad windows, this command cycles through them.
-	bindsym $mod+minus scratchpad show
 
 mode "resize" {
 	# left will shrink the containers width
@@ -129,10 +117,17 @@ bar {
 	status_command conky
 
 	colors {
+		background #000000
 		statusline #ffffff
-		background #323232
-		inactive_workspace #32323200 #32323200 #5c5c5c
+		focused_workspace #ffff00 #ffff00 #000000
+		inactive_workspace #3f3f3f #3f3f3f #ffffff
+		urgent_workspace #ff0000 #ff0000 #ffffff
 	}
 }
+
+client.focused #aaaa00 #aaaa00 #000000
+client.unfocused #3f3f3f #3f3f3f #ffffff
+client.focused_inactive #3f3f3f #3f3f3f #ffffff
+client.urgent #ff0000 #ff0000 #000000
 
 include /etc/sway/config.d/*

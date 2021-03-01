@@ -108,7 +108,7 @@ bar {
 
 client.focused #aaaa00 #aaaa00 #000000
 client.unfocused #3f3f3f #3f3f3f #ffffff
-client.focused_inactive #3f3f3f #3f3f3f #ffffff
+client.focused_inactive #ffffff #3f3f3f #ffffff
 client.urgent #ff0000 #ff0000 #000000
 
 include /etc/sway/config.d/*

@@ -8,6 +8,7 @@ mkdir -p ~/.config/sway
 cmd sway ~/.config/sway/config
 
 cmd mpv ~/.config/
+cmd tmux.conf ~/.tmux.conf
 
 mkdir -p ~/.config/conky
 cmd conky.conf ~/.config/conky/

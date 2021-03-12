@@ -5,6 +5,7 @@
     "autosu": false,
     "backup": true,
     "basename": false,
+    "clipboard": "terminal",
     "colorcolumn": 120,
     "colorscheme": "yujiri",
     "comment": true,

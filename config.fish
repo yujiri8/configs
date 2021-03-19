@@ -81,7 +81,14 @@ function ccount; git log --oneline | wc -l; end # commit count
 function mp; mpv $argv; end
 function ffmpeg; command ffmpeg $argv -hide_banner; end
 # alarm shortcut
-function alarm; echo "~/code/util/alarm.sh" | at $argv; end
+function alarm
+	argparse --name=alarm 'm/message=' -- $argv
+	if test -n $_flag_message
+		echo "while true; do espeak $_flag_message; sleep 5; done" | at $argv
+	else
+		echo "~/code/util/alarm.sh" | at $argv
+	end
+end
 # 'alert' - run a command and beep if it fails
 function al; $argv; if test $status -ne 0; alert_fork; end; end
 # 'remind' - run a command and beep when it finishes regardless of exit status

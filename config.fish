@@ -89,6 +89,11 @@ function alarm
 		echo "~/code/util/alarm.sh" | at $argv
 	end
 end
+# tracking time spent on things
+function timer
+	$u/timer/timer.py $argv &
+	disown
+end
 # 'alert' - run a command and beep if it fails
 function al; $argv; if test $status -ne 0; alert_fork; end; end
 # 'remind' - run a command and beep when it finishes regardless of exit status

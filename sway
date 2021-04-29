@@ -112,3 +112,5 @@ client.focused_inactive #ffffff #3f3f3f #ffffff
 client.urgent #ff0000 #ff0000 #000000
 
 include /etc/sway/config.d/*
+
+exec mako

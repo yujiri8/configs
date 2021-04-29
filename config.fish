@@ -84,7 +84,7 @@ function ffmpeg; command ffmpeg $argv -hide_banner; end
 function alarm
 	argparse --name=alarm 'm/message=' -- $argv
 	if test -n "$_flag_message"
-		echo "while true; do espeak $_flag_message; sleep 5; done" | at $argv
+		echo "while true; do espeak \"$_flag_message\"; sleep 5; done" | at $argv
 	else
 		echo "~/code/util/alarm.sh" | at $argv
 	end

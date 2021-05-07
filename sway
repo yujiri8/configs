@@ -11,7 +11,7 @@ input "type:keyboard" {
 bindsym $mod+Return exec $term
 bindsym $mod+Tab exec firefox
 bindsym $mod+Shift+Tab exec chromium --no-sandbox
-bindsym $mod+Backslash exec fractal
+bindsym $mod+Backslash exec flatpak run io.github.NhekoReborn.Nheko
 bindsym $mod+Shift+Backslash exec signal-desktop
 bindsym $mod+m exec lmms --allowroot # music
 bindsym $mod+i exec gimp # image

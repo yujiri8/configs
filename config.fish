@@ -108,6 +108,11 @@ function alert_fork
 	end
 end
 
+# fix the delay caused by the did-you-mean behavior in the Artix package.
+function fish_command_not_found
+	__fish_default_command_not_found_handler $argv
+end
+
 # quick go - bookmarks
 set -x a ryan@bespin.experimeta.com
 set -x y root@yujiri.xyz
